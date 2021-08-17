@@ -40,6 +40,7 @@ function validParentheses(x){
   var left = /\(/g;
   var right = /\)/g;
   if (1 < x.length <= 100){
+    for (var i = 0; i < x.length; i++)
   if((x.match(left) != null) &&  (x.match(right) != null)){
     if(x.match(left).length === x.match(right).length){
     return true;

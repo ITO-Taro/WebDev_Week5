@@ -45,3 +45,77 @@ function renderCharmander(){
 function renderBulbasaur(){
     document.getElementsByClassName("pokeimg")[2].src = bulbasaurPic;
 }
+
+var squirtlePic = "https://studio.cults3d.com/DePEvZk4Aj3OrFEAjTb6qfurv18=/516x516/https://files.cults3d.com/uploaders/17709429/illustration-file/ad65b362-37a4-466f-9adf-43f96f007f84/png-clipart-pikachu-squirtle-pokemon-poke-ball-bulbasaur-pikachu-mammal-vertebrate.png";
+
+var charmanderPic = "https://www.thefactsite.com/wp-content/uploads/2020/09/charmander-facts.jpg";
+
+var bulbasaurPic = "https://static.pokemonpets.com/images/monsters-images-300-300/1-Bulbasaur.webp";
+
+//We are going to practice the DOM with Callbacks. 
+
+document.getElementById("squirtle").addEventListener("click", renderSquirtle)
+document.getElementById("charmander").addEventListener("click", renderCharmander)
+document.getElementById("bulbasaur").addEventListener("click", renderBulbasaur)
+
+function renderSquirtle(){
+    document.getElementsByClassName("pokeimg")[0].src = squirtlePic;
+}
+
+    
+function renderCharmander(){
+    document.getElementsByClassName("pokeimg")[1].src = charmanderPic;
+}
+
+   
+function renderBulbasaur(){
+    document.getElementsByClassName("pokeimg")[2].src = bulbasaurPic;
+}
+
+//We are going to take some time to discuss call back functions in relation to event listeners and the document object model. 
+
+var squirtlePic = "https://studio.cults3d.com/DePEvZk4Aj3OrFEAjTb6qfurv18=/516x516/https://files.cults3d.com/uploaders/17709429/illustration-file/ad65b362-37a4-466f-9adf-43f96f007f84/png-clipart-pikachu-squirtle-pokemon-poke-ball-bulbasaur-pikachu-mammal-vertebrate.png";
+
+var charmanderPic = "https://www.thefactsite.com/wp-content/uploads/2020/09/charmander-facts.jpg";
+
+var bulbasaurPic = "https://static.pokemonpets.com/images/monsters-images-300-300/1-Bulbasaur.webp";
+
+//We are going to practice the DOM with Callbacks. 
+
+//This is by referring to the components by ID:
+// document.getElementById("squirtle").addEventListener("click", renderSquirtle);
+// document.getElementById("charmander").addEventListener("click", renderCharmander);
+// document.getElementById("bulbasaur").addEventListener("click", renderBulbasaur);
+
+//This is by referring to the components by Class: 
+
+document.getElementsByClassName("pokeimg")[0].addEventListener("click", () => {
+    document.getElementsByClassName("pokeimg")[0].src = squirtlePic;
+});
+
+
+document.getElementsByClassName("pokeimg")[1].addEventListener("click", () => {
+    document.getElementsByClassName("pokeimg")[1].src = charmanderPic;
+});
+
+document.getElementsByClassName("pokeimg")[2].addEventListener("click", () => {
+    document.getElementsByClassName("pokeimg")[2].src = bulbasaurPic;
+});
+
+
+//We are going to take some time to discuss call back functions in relation to event listeners and the document object model.
+
+//Single out the first pokeball which is Squirtle
+
+document.querySelector("#squirtle").addEventListener("click", () => {
+    document.querySelector("#squirtle").src = squirtlePic;
+});
+
+document.querySelector("#bulbasaur").addEventListener("click", () => {
+    document.querySelector("#bulbasaur").src = bulbasaurPic;
+});
+
+document.querySelector("#charmander").addEventListener("click", () => {
+    document.querySelector("#charmander").src = charmanderPic;
+});
+

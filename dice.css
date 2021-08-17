@@ -1,9 +1,8 @@
 #title{
     text-align: center;
-    padding-top: 10%;
+    padding-top: 5%;
     font-family: 'Bungee Shade', Times;
     font-size: 5rem;
-    
 }
 #roll{
     border-color: rgb(246, 5, 5);
@@ -21,17 +20,52 @@
     color: rgb(246, 5, 5);
 }
 
+#player-score{
+    text-align: center;
+    font-family: 'Bungee Shade', Times;
+    font-size: 4rem;
+    color: rgb(246, 5, 5);
+    margin-bottom: 0%;margin-top: 0%;
+}
+
+#player1-num, #player2-num{
+    text-align: center;
+    font-family: 'Bungee Shade', Times;
+    font-size: 4rem;
+    margin-top: 2%;
+    color: rgb(246, 5, 5);
+    width: 100%;
+    height: 10%;
+}
+
 #dice1-img, #dice2-img{
-    width: 60%;
-    height: 60%;
+    width: 100%;
+    height: 100%;
     color: rgb(246, 5, 5);
 }
 
 #dice1-pic, #dice2-pic{
     text-align: center;
-    width: 100%;
-    height: 100%;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
     color: rgb(246, 5, 5);
+}
+
+#player, #dice-player1, #dice-player2{
+    margin-top: 0%;
+}
+
+#total-score-1, #total-score-2{
+    text-align: center;
+    font-family: 'Bungee Shade', Times;
+    font-size: 4rem;
+    margin-top: 10%;
+    color: rgb(246, 5, 5);
+    height: 50%;
+    width: 100%;
+    margin-top: 5%;
+    background-color: rgb(43, 43, 43);
 }
 
 #col-total{
@@ -60,5 +94,39 @@ h2{
     margin-left: auto;
     margin-right: auto;
     color: rgb(246, 5, 5);
+    background-color: rgb(43, 43, 43);
+}
+
+#refresh{
+    text-align: center;
+    padding-top: 3%;
+    font-family: 'Bungee Shade', Times;
+    font-size: 3rem;
+}
+
+#result{
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    padding-top: 0%;
+    font-family: 'Bungee Shade', Times;
+    font-size: 6rem;
+    
+}
+
+#play-again{
+    border-color:none;
+    color: rgb(17, 246, 5);
+    width: 40%;
+    background-color: rgb(43, 43, 43);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#winner{
+    border-color: rgb(246, 5, 5) 1px;
+    color: rgb(246, 5, 5);
+    width: 100%;
+    height: 100%;
     background-color: rgb(43, 43, 43);
 }
